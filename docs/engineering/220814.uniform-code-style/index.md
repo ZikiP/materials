@@ -1,8 +1,12 @@
+---
+prev: /engineering/
+---
+
 # 背景
 
 在项目开发的协同工作中，由于每个人的编码爱好以及编码风格不同，很容易出现提交的代码在合并的过程中风格不统一诸如空格缩进，单引号双引号，一行多少个字符，结尾是否有`:`等情况。综上所述，项目的统一风格显得尤为重要。
 
-# 代码格式化流程
+## 代码格式化流程
 
 本次介绍：`Prettier`，`commitlint`
 
@@ -40,25 +44,25 @@ coverage
 
 ```json
 {
-	"[vue]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"[jsonc]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"[typescript]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"[json]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"[javascript]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"javascript.updateImportsOnFileMove.enabled": "always",
-	"editor.formatOnSave": true,
-	"window.zoomLevel": 0,
-	"files.eol": "\n"
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "editor.formatOnSave": true,
+  "window.zoomLevel": 0,
+  "files.eol": "\n"
 }
 ```
 
@@ -78,11 +82,11 @@ npx mrm@2 lint-staged
   }
 ```
 
-### 配置 commitlint
+## 配置 commitlint
 
 接着我们开始配置`commitlint`来规范`commit`提交的信息
 
-#### 安装
+## 安装
 
 安装依赖
 
@@ -94,7 +98,7 @@ npm install -g @commitlint/cli @commitlint/config-conventional --save-dev
 
 ```js
 module.exports = {
-	extends: ['@commitlint/config-conventional'],
+  extends: ["@commitlint/config-conventional"],
 };
 ```
 
@@ -107,7 +111,8 @@ module.exports = {
 npx --no-install commitlint --edit $1
 ```
 
-####使用
+## 使用
+
 提交规范
 
 ```bash
