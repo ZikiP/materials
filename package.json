@@ -1,0 +1,15 @@
+{
+  "name": "materials",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/ggt1024/materials.git",
+  "author": "Tony Wong <63030915+tonytony2020@users.noreply.github.com>",
+  "license": "MIT",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "devDependencies": {
+    "vuepress": "^2.0.0-beta.49"
+  }
+}
