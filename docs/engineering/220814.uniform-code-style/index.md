@@ -141,3 +141,4 @@ git commit -m <type>[optional scope]: <description>
 
 - `package.json`，type 参数值不能为`moudle`
 - `commitlint.config.js`文件编码格式需要为`utf-8`
+- `commitlint`顾名思义只对commit了的内容生效，如果其他项目参与者格式化了其他部分的代码，而在本地分支没有对这部分代码进行操作，是无法感知的，需要沟通协商手动格式化。
