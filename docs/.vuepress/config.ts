@@ -18,6 +18,10 @@ export default defineUserConfig({
         link: "/userend/",
       },
       {
+        text: "前端",
+        link: "/frontend/",
+      },
+      {
         text: "后端",
         link: "/backend/",
       },
